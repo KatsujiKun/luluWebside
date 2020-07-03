@@ -1,5 +1,3 @@
-
-
 .header {
     background-color: white;
     width: 100%;
@@ -18,9 +16,11 @@
     color: #FFF;
     line-height: 60px;
 }
-.layui-nav{
+
+.layui-nav {
     margin: 10px 0;
 }
+
 .logo img {
     width: 150px;
 }
@@ -60,13 +60,16 @@
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
     left: 45%;
 }
-.layui-nav .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+
+.layui-nav .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
     height: 0;
 }
-.radius{
+
+.radius {
     border: 1px solid #FC598E;
     background-color: #FC598E;
     border-radius: 50%;
@@ -76,21 +79,19 @@
     left: 45%;
     bottom: 0;
 }
-@font-face{
-    font-family: knockout;
-    src: url("font/Knockout-HTF29-JuniorLiteweight.otf");
-}
-.headline{
+
+.headline {
     margin-top: 50px;
     border-bottom: 1px solid white;
-    font-family:  knockout;
+    font-family: knockout;
 }
+
 /* 适配手机，针对iphone5系列 */
+
 @media screen and (max-width: 500px) {
     .header .logo {
         text-align: left;
     }
-
     .header .page_nav {
         display: none;
         width: 100%;
@@ -118,26 +119,26 @@
         height: 1px;
         background-color: #5FB878;
     }
-    .radius{
+    .radius {
         border: 0;
         width: 0px;
         height: 0px;
         border-radius: 0;
     }
-    .layui-nav .layui-nav-item a{
+    .layui-nav .layui-nav-item a {
         color: white;
     }
-    .layui-nav{
+    .layui-nav {
         background-color: pink;
         margin: 25px 0;
     }
-    .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+    .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
         display: none;
     }
-    #title_right{
+    #title_right {
         display: none;
     }
-    .headline{
+    .headline {
         text-align: center;
     }
 }
