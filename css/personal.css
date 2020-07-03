@@ -1,0 +1,99 @@
+.layui-btn-primary {
+    margin-top: 10px;
+    border: 0;
+    border-radius: 3px;
+}
+
+span {
+    font-weight: bold;
+}
+
+h1, h3, h4 {
+    text-align: center;
+    color: white;
+}
+
+body {
+    font-family: "./font/PingFang Bold.ttf";
+    background-color: #FC598E;
+}
+
+table {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+dl {
+    padding: 10px;
+}
+
+span {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+p {
+    color: white;
+}
+
+.headline {
+    max-width: 960px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+.profile_tag {
+    border: 1px solid pink;
+    width: 100px;
+    height: 30px;
+    background-color: pink;
+    border-radius: 5px;
+    margin: 20px 0 20px;
+    text-align: center;
+}
+
+.profile_link_icon li {
+    float: left;
+}
+
+.profile_link_icon img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.profile_text1, .profile_other {
+    width: 470px;
+}
+
+@media screen and (max-width: 768px) {
+    .layui-nav .layui-nav-item a {
+        display: block;
+        padding: 0 10px;
+        color: white;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+    }
+    .profile_text1, .profile_other {
+        width: 420px;
+    }
+    .profile_img img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profile_text1, .profile_other {
+        width: 290px;
+    }
+    .layui-col-xs5 {
+        width: 95%;
+    }
+    #profile_2 {
+        position: absolute;
+        top: 100%;
+        margin-bottom: 100px;
+    }
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雫るる| Video</title>
+    <link rel="stylesheet" href="css/layui/css/layui.css">
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="./css/sortable.min.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <script src="css/layui/layui.js"></script>
+    <script type="text/javascript" src="./js/sortable.min.js"></script>
+    <style>
+        body {
+            font-family: "./font/PingFang Bold.ttf";
+            background-color: #FC598E;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="layui-container" id="nav_container">
+            <div class="logo">
+                <img src="images/lulu_logo.png" width="98px" alt="">
+            </div>
+            <i class="layui-icon layui-icon-app mobile-icon"></i>
+            <div class="page_nav">
+                <ul class="layui-nav">
+                    <li class="layui-nav-item">
+                        <a href="#">首页</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="personal.html">个人简介</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a href="music.html">音乐</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item layui-this">
+                        <a href="video.html ">视频</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="#">表情包</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a href="about.html">关于</a>
+                        <div class="radius"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="layui-container">
+        <div class="layui-row" style="position: relative;left: 0;">
+            <div class="headline">
+                <h1 style="display: inline-block;">视频</h1>
+                <h1 id="title_right" style="float: right;">MOVIE</h1>
+            </div>
+        </div>
+    </div>
+    <main class="sortable">
+        <div class="container">
+            <div class="wrapper">
+                <div class="hidden_taglist">
+                <div class="hiddenseclist">
+                    <ul class="sortable__nav nav" style="border-bottom: 1px dotted pink;margin-bottom: 30px;">
+                        <li class="tag_list">
+                            <a data-sjslink="all" class="nav__link">
+                                所有
+                            </a>
+                        </li class="tag_list">
+                        <li class="tag_list">
+                            <a data-sjslink="1min" class="nav__link">
+                                るる一分钟
+                            </a>
+                        </li>
+                        <li class="tag_list">
+                            <a data-sjslink="Chinese" class="nav__link">
+                                学中文
+                            </a>
+                        </li>
+                        <li class="tag_list">
+                            <a data-sjslink="game" class="nav__link">
+                                游戏
+                            </a>
+                        </li>
+                        <li class="tag_list">
+                            <a data-sjslink="tensai" class="nav__link">
+                                天才
+                            </a>
+                        </li>
+                        <li class="tag_list">
+                            <a data-sjslink="nayami" class="nav__link">
+                                烦恼咨询室
+                            </a>
+                        </li>
+                        <li class="tag_list">
+                            <a data-sjslink="other" class="nav__link">
+                                其他
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <div id="sortable" class="sjs-default" style="height: auto;">
+                    <div data-sjsel="other">
+                        <div class="card">
+                            <div class="img_link">
+                                <a href="">
+                                    <img id="img" class="card__picture"
+                                        src="./images/video/156d5facc5db39b7e1c0413d874711e8a1b1f4b1.jpg@380w_240h_100Q_1c.webp"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="card-infos">
+                                <h2 class="card__title">一周年纪念配信 一年了，谢谢有你</h2>
+                                <div class="tag">
+                                    <span>其他</span>
+                                </div>
+                                <p class="card__text">
+                                <p>本视频剪辑于雫るる6月11日的直播，由莎蓧字幕组协力制作</p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sjsel="game">
+                        <div class="card">
+                            <div class="img_link">
+                                <a href="">
+                                    <img id="img" class="card__picture"
+                                        src="./images/video/18fee3cb8c5f102fc5cb66906ceb351a5947fdfb.jpg@380w_240h_100Q_1c.webp"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="card-infos">
+                                <h2 class="card__title">【港诡实录】吓到漏……音，在风水宝地开音乐会</h2>
+                                <div class="tag">
+                                    <span>游戏</span>
+                                </div>
+                                <p class="card__text">
+                                <p>本视频剪辑于雫るる3月4日的直播，由莎莜字幕组协力制作</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sjsel="game">
+                        <div class="card">
+                            <div class="img_link">
+                                <a href="">
+                                    <img id="img" class="card__picture"
+                                        src="./images/video/2161a5fac91247bcbd148ad09dea5815a370596e.jpg@380w_240h_100Q_1c.webp"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="card-infos">
+                                <h2 class="card__title">祖安之主 下路骚话劫</h2>
+                                <div class="tag">
+                                    <span>游戏</span>
+                                </div>
+                                <p class="card__text">
+                                <p>本视频剪辑于雫るる往期直播素材，由莎莜字幕组协力制作</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sjsel="other">
+                        <div class="card">
+                            <div class="img_link">
+                                <a href="">
+                                    <img id="img" class="card__picture"
+                                        src="./images/video/b63ed987472933d9edc2e5b4c23ebb7e08377546.jpg@380w_240h_100Q_1c.webp"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="card-infos">
+                                <h2 class="card__title">【生日回】烟花，干杯！</h2>
+                                <div class="tag">
+                                    <span>其他</span>
+                                </div>
+                                <p class="card__text">
+                                <p>本视频剪辑于雫るる3月8日的直播，由莎莜字幕组协力制作</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sjsel="game">
+                        <div class="card">
+                            <div class="img_link">
+                                <a href="">
+                                    <img id="img" class="card__picture"
+                                        src="./images/video/c1480f06805480f2cc2ac44946768d0c8618b8d8.jpg@380w_240h_100Q_1c.webp"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="card-infos">
+                                <h2 class="card__title">又一个V妈妈，i了i了</h2>
+                                <div class="tag">
+                                    <span>游戏</span>
+                                </div>
+                                <p class="card__text">
+                                <p>本视频剪辑于雫るる4月7日的直播，由莎蓧字幕组协力制作</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sjsel="other">
+                        <div class="card">
+                            <div class="img_link">
+                                <a href="">
+                                    <img id="img" class="card__picture"
+                                        src="./images/video/599e2ac3697ced52bcfb9756e5c03aa7bbb90fbd.jpg@380w_240h_100Q_1c.webp"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="card-infos">
+                                <h2 class="card__title">你以为说中文就能让字幕组失业？</h2>
+                                <div class="tag">
+                                    <span>游戏</span>
+                                </div>
+                                <p class="card__text">
+                                <p>本视频剪辑于雫るる4月25日的直播，由莎莜字幕组协力制作</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        layui.use(['element', 'layer'], function () {
+            var element = layui.element;
+            var layer = layui.layer;
+        });
+        $(".mobile-icon").click(function () {
+            $(".page_nav").toggleClass('layui-show');
+        });
+        document.querySelector('#sortable').sortablejs();
+        $()
+    </script>
+</body>
+
+</html>

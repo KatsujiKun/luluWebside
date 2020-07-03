@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雫るる| Music</title>
+    <link rel="stylesheet" href="css/layui/css/layui.css">
+    <link rel="stylesheet" href="./css/music.css">
+
+    <script src="css/layui/layui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="./css/nav.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="layui-container" id="nav_container">
+            <div class="logo">
+                <img src="images/lulu_logo.png" width="98px" alt="">
+            </div>
+            <i class="layui-icon layui-icon-app mobile-icon"></i>
+            <div class="page_nav">
+                <ul class="layui-nav">
+                    <li class="layui-nav-item">
+                        <a href="#">首页</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="personal.html">个人简介</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item layui-this">
+                        <a href="music.html">音乐</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="video.html">视频</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="#">表情包</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a href="about.html">关于</a>
+                        <div class="radius"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="layui-container">
+        <div class="layui-row">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md12">
+                <div class="headline">
+                    <h1 style="display: inline-block;">音乐</h1>
+                    <h1 id="title-right" style="float: right;">Music</h1>
+                </div>
+            </div>
+        </div>
+        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+            <ul class="layui-tab-title">
+                <li class="layui-this">翻唱合辑</li>
+                <li>同人音乐</li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <div class="layui-row" style="margin-top: 0;">
+                        <div class="Album">
+                            <div class="Album-title">
+                                <span style="font-size: 24px;">雫&nbspる&nbspる&nbsp翻&nbsp唱&nbsp合&nbsp辑</span>
+                            </div>
+                            <div class="hidden_sco">
+                                <div class="cover_list">
+                                    <ul>
+                                        <li class="title_list">01.细雪</li>
+                                        <li class="title_list">02.细雪</li>
+                                        <li class="title_list">03.细雪</li>
+                                        <li class="title_list">04.细雪</li>
+                                        <li class="title_list">05.细雪</li>
+                                        <li class="title_list">06.细雪</li>
+                                        <li class="title_list">07.细雪</li>
+                                        <li class="title_list">08.细雪</li>
+                                        <li class="title_list">09.细雪</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-img">
+                            <img src="./images/lulu.png" alt="">
+                        </div>
+                        <div class="song-num" style="font-size: 18px;">
+                            <span>歌曲列表（3首）</span>
+                        </div>
+                        <div class="layui-col-xs6 layui-col-sm6 layui-col-md10"
+                            style="border: 1px solid white; border-radius: 5px;" id="botm">
+                            <div class="musicbox">
+                                <div class="song-list-num" style="width:6%;text-align: center;">
+                                    <span>1.</span></div>
+                                <div class="song-list-title">
+                                    <span>细雪xxxxxxxxxxxxxxxxxx</span></div>
+                                <div class="song-list-unname" style="width:25%">
+                                    <span>雫るる</span></div>
+                                <div class="song-list-time">
+                                    <span> 00:00</span>
+                                </div>
+                                <button type="button" onclick="myFunction()"
+                                    class="layui-btn layui-btn-sm layui-btn-primary" style="margin-top: 0;">
+                                    <i class="layui-icon-play" style="font-family: iconfont;"></i></button>
+                            </div>
+                            <div class="musicbox">
+                                <div class="song-list-num" style="width:6%;text-align: center;">
+                                    <span>2.</span></div>
+                                <div class="song-list-title">
+                                    <span>细雪</span></div>
+                                <div class="song-list-unname" style="width:25%">
+                                    <span>雫るる</span></div>
+                                <div class="song-list-time">
+                                    <span> 00:00</span>
+                                </div>
+                                <button type="button" onclick="myFunction()"
+                                    class="layui-btn layui-btn-sm layui-btn-primary" style="margin-top: 0;">
+                                    <i class="layui-icon-play" style="font-family: iconfont;"></i></button>
+                            </div>
+                            <div class="musicbox">
+                                <div class="song-list-num" style="width:6%;text-align: center;">
+                                    <span>3.</span></div>
+                                <div class="song-list-title">
+                                    <span>细雪</span></div>
+                                <div class="song-list-unname" style="width:25%">
+                                    <span>雫るる</span></div>
+                                <div class="song-list-time">
+                                    <span> 00:00</span>
+                                </div>
+                                <button type="button" onclick="myFunction()"
+                                    class="layui-btn layui-btn-sm layui-btn-primary" style="margin-top: 0;">
+                                    <i class="layui-icon-play" style="font-family: iconfont;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="layui-tab-item">
+                    <div class="layui-row" style="margin-top: 0;">
+                        <div class="Album">
+                            <div class="Album-title">
+                                <span style="font-size: 24px;">同&nbsp人&nbsp音&nbsp乐&nbsp合&nbsp辑</span>
+                            </div>
+                            <div class="hidden_sco" style="width: 500px;overflow: hidden;">
+                                <div class="cover_list">
+                                    <ul>
+                                        <li class="title_list">01.不知道</li>
+                                        <li class="title_list">02.不知道</li>
+                                        <li class="title_list">03.lulu的bgm</li>
+                                        <li class="title_list">04.不知</li>
+                                        <li class="title_list">05.细雪</li>
+                                        <li class="title_list">06.细雪</li>
+                                        <li class="title_list">07.细雪</li>
+                                        <li class="title_list">08.细雪</li>
+                                        <li class="title_list">09.细雪</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-img">
+                            <img src="./images/lulu.png" alt="">
+                        </div>
+                        <div class="song-num" style="font-size: 18px;">
+                            <span>歌曲列表（3首）</span>
+                        </div>
+                        <div class="layui-col-xs6 layui-col-sm6 layui-col-md10"
+                            style="border: 1px solid white; border-radius: 5px;">
+                            <div class="musicbox">
+                                <div class="song-list-num" style="width:6%;text-align: center;">
+                                    <span>1.</span></div>
+                                <div class="song-list-title">
+                                    <span>lulu的BGM01</span></div>
+                                <div class="song-list-unname" style="width:25%">
+                                    <span>雫るる</span></div>
+                                <div class="song-list-time">
+                                    <span> 00:00</span>
+                                </div>
+                                <button type="button" onclick="myFunction()"
+                                    class="layui-btn layui-btn-sm layui-btn-primary" style="margin-top: 0;">
+                                    <i class="layui-icon-play" style="font-family: iconfont;"></i></button>
+                            </div>
+                            <div class="musicbox">
+                                <div class="song-list-num" style="width:6%;text-align: center;">
+                                    <span>2.</span></div>
+                                <div class="song-list-title">
+                                    <span>细雪</span></div>
+                                <div class="song-list-unname" style="width:25%">
+                                    <span>雫るる</span></div>
+                                <div class="song-list-time">
+                                    <span> 00:00</span>
+                                </div>
+                                <button type="button" onclick="myFunction()"
+                                    class="layui-btn layui-btn-sm layui-btn-primary" style="margin-top: 0;">
+                                    <i class="layui-icon-play" style="font-family: iconfont;"></i></button>
+                            </div>
+                            <div class="musicbox">
+                                <div class="song-list-num" style="width:6%;text-align: center;">
+                                    <span>3.</span></div>
+                                <div class="song-list-title">
+                                    <span>细雪</span></div>
+                                <div class="song-list-unname" style="width:25%">
+                                    <span>雫るる</span></div>
+                                <div class="song-list-time">
+                                    <span> 00:00</span>
+                                </div>
+                                <button type="button" onclick="myFunction()"
+                                    class="layui-btn layui-btn-sm layui-btn-primary" style="margin-top: 0;">
+                                    <i class="layui-icon-play" style="font-family: iconfont;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="aplayer"></div>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        layui.use(['element', 'layer'], function () {
+            var element = layui.element;
+            var layer = layui.layer;
+        });
+        $(".mobile-icon").click(function () {
+            $(".page_nav").toggleClass('layui-show');
+        });
+        layui.use('element', function () {
+            var element = layui.element;
+            //一些事件监听
+            element.on('tab(docDemoTabBrief)', function (data) {
+                console.log(data);
+            });
+        });
+        function myFunction() {
+            document.querySelector('.aplayer')
+            const ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                loop: 'all',
+                order: 'random',
+                preload: 'auto',
+                volume: 0.7,
+                mutex: true,
+                listFolded: false,
+                listMaxHeight: 100,
+                fixed: true,
+                audio: [{
+                    name: '细雪',
+                    artist: '雫るる',
+                    url: 'url.mp3',
+                    cover: 'images/music/1.webp',
+                }]
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/layui/css/layui.css">
+    <script src="./css/layui/layui.js"></script>
+    <link rel="stylesheet" href="css/nav.css">
+    <title>雫るる| About</title>
+    <style type="text/css">
+        body {
+            background-color: #FC598E;
+        }
+        @font-face {
+            font-family: PingFangBold;
+            src: url("font/PingFang Bold.ttf") format('trueType');
+        }
+        @font-face {
+            font-family: PingFnagRegular;
+            src: url("PingFang Regular.ttf") format('trueType');
+        }
+        @font-face {
+            font-family: PingFangMedium;
+            src: url("PingFangMedium.ttf") format('truetype');
+        }
+        p,
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: white;
+            font-family: PingFangMedium;
+        }
+        .headline{
+            margin: 50px 0;
+            border-bottom: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="layui-container" id="nav_container">
+            <div class="logo">
+                <img src="images/lulu_logo.png" width="98px" alt="">
+            </div>
+            <i class="layui-icon layui-icon-app mobile-icon"></i>
+            <div class="page_nav">
+                <ul class="layui-nav">
+                    <li class="layui-nav-item">
+                        <a href="#">首页</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="personal.html">个人简介</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="music.html">音乐</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="video.html">视频</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="#">表情包</a>
+                        <div class="radius"></div>
+                    </li>
+                    <li class="layui-nav-item layui-this"><a href="about.html">关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="layui-container">
+        <div class="layui-row">
+            <div class="headline">
+                <h1 id="title_left" style="display: inline-block;">关于</h1>
+                <h1 id="title_right" style="float: right;">ABOUT</h1>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md12" style="width: 100%;">
+                <div class="about" style="text-align: center;">
+                    <h2>制作组：雫るるの程序组</h2>
+                    <h3>总策划</h3>
+                    <h4>岡坂かつじ</h4>
+                    <h3>人事策划</h3>
+                    <h4>陌路人生1911</h4>
+                    <h3>项目总组长</h3>
+                    <h4>阿良々木暦</h4>
+                </div>
+                <div class="about-group" style="text-align: center;margin-top: 3%;">
+                    <h3>前端</h3>
+                    <h4>岡坂勝治&nbspMayeths&nbsp涂山苏苏</h4>
+                    <h3>后端</h3>
+                    <h4>红炎</h4>
+                    <h3>美工</h3>
+                    <h4>梦魇Tsuki</h4>
+                    <h2>投稿邮箱:shizukalulu@163.com</h2>
+                </div>
+                <div class="bottm-logo" style="text-align: center;margin-top: 5%;">
+                    <img src="./images/lulu_logo_2.png" alt="" width="200px">
+                </div>
+
+            </div>
+        </div>
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <script>
+            layui.use(['element', 'layer'], function () {
+                var element = layui.element;
+                var layer = layui.layer;
+
+            });
+            $(".mobile-icon").click(function () {
+                $(".page_nav").toggleClass('layui-show');
+            });
+        </script>
+</body>
+
+</html>
