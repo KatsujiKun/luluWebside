@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html lang="zh" class="no-js">
+<html lang="zh">
 
 <head>
-    <!-- <embed src="audio/lulu1.mp3" hidden="flase" autostart="true" loop="true"> -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/layui/css/layui.css">
-    <script src="./css/layui/layui.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雫るる| Video</title>
+    <link rel="stylesheet" href="css/layui/css/layui.css">
+    <link rel="stylesheet" href="./css/video.css">
     <link rel="stylesheet" href="./css/nav.css">
-    <title>雫るる| 表情包</title>
+    <script src="css/layui/layui.js"></script>
+    <script type="text/javascript" src="./js/sortable.min.js"></script>
+    <style>
+        body {
+            font-family: "./font/PingFang Bold.ttf";
+            background-color: #FC598E;
+        }
+
+        .img_link {
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+
+        #outerdiv {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        #innerdiv {
+            position: absolute;
+        }
+
+        #bigimg {
+            border: 5px solid #fff;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,36 +62,178 @@
                         <a href="personal.html">个人简介</a>
                         <div class="radius"></div>
                     </li>
-                    <li class="layui-nav-item">
+                    <li class="layui-nav-item ">
                         <a href="music.html">音乐</a>
                         <div class="radius"></div>
                     </li>
-                    <li class="layui-nav-item">
-                        <a href="video.html">视频</a>
+                    <li class="layui-nav-item layui-this">
+                        <a href="video.html ">视频</a>
                         <div class="radius"></div>
                     </li>
-                    <li class="layui-nav-item layui-this">
+                    <li class="layui-nav-item">
                         <a href="#">表情包</a>
                         <div class="radius"></div>
                     </li>
-                    <li class="layui-nav-item">
+                    <li class="layui-nav-item ">
                         <a href="about.html">关于</a>
+                        <div class="radius"></div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="layui-container">
-        <div class="layui-row">
-            <div class="layui-col-xs6 layui-col-sm6 layui-col-md12">
-
+        <div class="layui-row" style="position: relative;left: 0;">
+            <div class="headline">
+                <h1 style="display: inline-block;">视频</h1>
+                <h1 id="title_right" style="float: right;">MOVIE</h1>
             </div>
         </div>
-        <script>
-            layui.use('element', function () {
-                var element = layui.element;
+    </div>
+    <main class="sortable">
+        <div class="container">
+            <div class="wrapper">
+                <div class="hidden_taglist">
+                    <div class="hiddenseclist">
+                        <ul class="sortable__nav nav" style="border-bottom: 1px dotted pink;margin-bottom: 30px;">
+                            <li class="tag_list">
+                                <a data-sjslink="all" class="nav__link">
+                                    所有
+                                </a>
+                            </li class="tag_list">
+                            <li class="tag_list">
+                                <a data-sjslink="lulu_meme" class="nav__link">
+                                    るる表情包
+                                </a>
+                            </li>
+                            <li class="tag_list">
+                                <a data-sjslink="creatiton_meme" class="nav__link">
+                                    同人表情包
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div id="outerdiv">
+                    <div id="innerdiv">
+                        <img id="bigimg" src="" /></div>
+                </div>
+                <div id="sortable" class="sjs-default" style="height: auto;">
+                    <div data-sjsel="lulu_meme">
+                        <div class="card">
+                            <div class="img_link">
+                                <img id="img" class="card__picture"
+                                    src="./images/video/156d5facc5db39b7e1c0413d874711e8a1b1f4b1.jpg@380w_240h_100Q_1c.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sjsel="lulu_meme">
+                        <div class="card">
+                            <div class="img_link">
+                                <img id="img" class="card__picture"
+                                    src="./images/video/18fee3cb8c5f102fc5cb66906ceb351a5947fdfb.jpg@380w_240h_100Q_1c.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sjsel="lulu_meme">
+                        <div class="card">
+                            <div class="img_link">
+                                <img id="img" class="card__picture"
+                                    src="./images/video/2161a5fac91247bcbd148ad09dea5815a370596e.jpg@380w_240h_100Q_1c.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sjsel="creatiton_meme">
+                        <div class="card">
+                            <div class="img_link">
+                                <img id="img" class="card__picture"
+                                    src="./images/video/b63ed987472933d9edc2e5b4c23ebb7e08377546.jpg@380w_240h_100Q_1c.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sjsel="creatiton_meme">
+                        <div class="card">
+                            <div class="img_link">
+                                <img id="img" class="card__picture"
+                                    src="./images/video/c1480f06805480f2cc2ac44946768d0c8618b8d8.jpg@380w_240h_100Q_1c.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sjsel="creatiton_meme">
+                        <div class="card">
+                            <div class="img_link">
+                                <img id="img" class="card__picture"
+                                    src="./images/video/599e2ac3697ced52bcfb9756e5c03aa7bbb90fbd.jpg@380w_240h_100Q_1c.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        layui.use(['element', 'layer'], function () {
+            var element = layui.element;
+            var layer = layui.layer;
+        });
+        $(".mobile-icon").click(function () {
+            $(".page_nav").toggleClass('layui-show');
+        });
+        document.querySelector('#sortable').sortablejs();
+        $()
+        $(function () {
+            $(".card__picture").click(function () {
+                var _this = $(this);//将当前的pimg元素作为_this传入函数  
+                imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
             });
-        </script>
+        });
+        function imgShow(outerdiv, innerdiv, bigimg, _this) {
+            var src = _this.attr("src");//获取当前点击的pimg元素中的src属性  
+            $(bigimg).attr("src", src);//设置#bigimg元素的src属性  
+
+            /*获取当前点击图片的真实大小，并显示弹出层及大图*/
+            $("<img/>").attr("src", src).load(function () {
+                var windowW = $(window).width();//获取当前窗口宽度  
+                var windowH = $(window).height();//获取当前窗口高度  
+                var realWidth = this.width;//获取图片真实宽度  
+                var realHeight = this.height;//获取图片真实高度  
+                var imgWidth, imgHeight;
+                var scale = 0.8;//缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放  
+
+                if (realHeight > windowH * scale) {//判断图片高度  
+                    imgHeight = windowH * scale;//如大于窗口高度，图片高度进行缩放  
+                    imgWidth = imgHeight / realHeight * realWidth;//等比例缩放宽度  
+                    if (imgWidth > windowW * scale) {//如宽度扔大于窗口宽度  
+                        imgWidth = windowW * scale;//再对宽度进行缩放  
+                    }
+                } else if (realWidth > windowW * scale) {//如图片高度合适，判断图片宽度  
+                    imgWidth = windowW * scale;//如大于窗口宽度，图片宽度进行缩放  
+                    imgHeight = imgWidth / realWidth * realHeight;//等比例缩放高度  
+                } else {//如果图片真实高度和宽度都符合要求，高宽不变  
+                    imgWidth = realWidth;
+                    imgHeight = realHeight;
+                }
+                $(bigimg).css("width", imgWidth);//以最终的宽度对图片缩放  
+
+                var w = (windowW - imgWidth) / 2;//计算图片与窗口左边距  
+                var h = (windowH - imgHeight) / 2;//计算图片与窗口上边距  
+                $(innerdiv).css({ "top": h, "left": w });//设置#innerdiv的top和left属性  
+                $(outerdiv).fadeIn("fast");//淡入显示#outerdiv及.pimg  
+            });
+
+            $(outerdiv).click(function () {//再次点击淡出消失弹出层  
+                $(this).fadeOut("fast");
+            });
+        } 
+    </script>
 </body>
 
 </html>
