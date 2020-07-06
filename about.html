@@ -14,41 +14,22 @@
             background-color: #FC598E;
         }
 
-        @font-face {
-            font-family: PingFangBold;
-            src: url("font/PingFang Bold.ttf") format('trueType');
-        }
-
-        @font-face {
-            font-family: PingFnagRegular;
-            src: url("PingFang Regular.ttf") format('trueType');
-        }
-
-        @font-face {
-            font-family: PingFangMedium;
-            src: url("PingFangMedium.ttf") format('truetype');
-        }
-
         p,
         h1,
         h2,
         h3,
         h4 {
             color: white;
-            font-family: PingFangMedium;
         }
 
         .headline {
-            margin: 50px 0;
+            max-width: 960px;
+            margin: 50px auto;
             border-bottom: 1px solid white;
         }
 
         #help_btn {
             border: 0;
-        }
-        .layui-layer-btn .layui-layer-btn0{
-            background-color: #1e9fff00;
-            border-color: white;
         }
     </style>
 </head>
@@ -63,7 +44,7 @@
             <div class="page_nav">
                 <ul class="layui-nav">
                     <li class="layui-nav-item">
-                        <a href="#">首页</a>
+                        <a href="main.html">首页</a>
                         <div class="radius"></div>
                     </li>
                     <li class="layui-nav-item">
@@ -111,13 +92,14 @@
                     <h3>前端</h3>
                     <h4>岡坂勝治&nbspMayeths&nbsp涂山苏苏</h4>
                     <h3>后端</h3>
-                    <h4>红炎</h4>
+                    <h4>红炎&nbsp阿良々木暦&nbsp普拉斯鸽子&nbspふゆゆ&nbspゞ洳泚丶帞泩ゞ洳泚丶
+                    </h4>
                     <h3>美工</h3>
                     <h4>梦魇Tsuki</h4>
                     <h2>投稿邮箱:shizukalulu@163.com</h2>
                     <button type="button" data-method="confirmTrans"
                             class="layui-btn layui-btn-primary layui-btn-xs" id="help_btn">
-                            <i class="layui-icon">&#xe607;</i></button>
+                            投稿说明</button>
                 </div>
                 <div class="bottm-logo" style="text-align: center;margin-top: 5%;">
                     <img src="./images/lulu_logo_2.png" alt="" width="200px">
@@ -140,9 +122,8 @@
                 var active = {
                     confirmTrans: function () {
                         //配置一个透明的询问框
-                        
                         layer.msg('由于服务器内存原因，只支持投稿图片和音乐。<p>投稿格式：（同人图/本人作品）音乐/表情包</P><p>注意：请确保版权后再投稿</p>', {
-                            time: 0,
+                            time: 0,//关闭自动关闭
                             btn: ['明白了']
                         });
                     }

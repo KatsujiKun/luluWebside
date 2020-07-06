@@ -124,6 +124,8 @@ hr {
 .sortable__nav {
   display: flex;
   justify-content: center;
+  border-bottom: 1px dotted pink;
+  margin-bottom: 30px;
 }
 
 .nav__link {
@@ -292,14 +294,16 @@ h1 {
     overflow-x: scroll;
     height: 80px;
   }
-  .hidden_taglist{
+  .hidden_taglist {
     border-bottom: 1px dotted pink;
-    overflow: hidden; 
+    overflow: hidden;
     height: 60px;
     margin-bottom: 20px;
   }
-  .sortable__nav{
+  .sortable__nav {
     width: 750px;
+    margin-bottom: 0;
+  
   }
   .nav__link {
     padding: 0px 0px 4px;
@@ -307,5 +311,5 @@ h1 {
     font-weight: 300;
     display: block;
     border-bottom: 2px solid transparent;
-}
+  }
 }

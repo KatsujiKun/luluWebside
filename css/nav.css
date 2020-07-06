@@ -81,9 +81,9 @@
 }
 
 .headline {
+    max-width: 960px;
     margin-top: 50px;
     border-bottom: 1px solid white;
-    font-family: knockout;
 }
 
 /* 适配手机，针对iphone5系列 */
